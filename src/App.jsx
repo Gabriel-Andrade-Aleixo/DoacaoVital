@@ -10,6 +10,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <h1>Bom Dia</h1>
     </>
   )
 }
