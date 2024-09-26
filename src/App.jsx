@@ -1,6 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Doacao from "./pages/Doacao";
+import Estoque from "./pages/Estoque";
+import Sobre from "./pages/Sobre";
+import Solicitacao from "./pages/Solicitacao";
+import Suporte from "./pages/Suporte";
 
 function App() {
   return (
@@ -8,6 +13,11 @@ function App() {
       <Routes>
         <Route index element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/doacao" element={<Doacao />}/>
+        <Route path="/estoque" element={<Estoque />}/>
+        <Route path="/sobre" element={<Sobre />}/>
+        <Route path="/solicitacao" element={<Solicitacao />}/>
+        <Route path="/suporte" element={<Suporte />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <h1>Bom Dia</h1>

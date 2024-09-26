@@ -1,0 +1,89 @@
+/* Estilos globais */
+.header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Ajuste para que o ícone fique à direita */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para posicionamento correto do ícone */
+    z-index: 10;
+}
+
+.navBar {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Oculta a lista de navegação por padrão */
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transition: left 0.3s ease;
+}
+
+/* Configuração quando o menu está ativo */
+.navList.active {
+    left: 0;
+}
+
+/* Itens da barra de navegação */
+.navItem {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.navItem:hover {
+    color: #f0a500; 
+}
+
+/* Configurações responsivas */
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: -100%; /* Inicialmente fora da tela */
+        width: 100%;
+        height: 100vh;
+        justify-content: start;
+        transition: left 0.3s ease;
+    }
+
+    /* Somente quando o menu está ativo */
+    .navList.active {
+        left: 0; /* Entra na tela quando ativo */
+    }
+
+    .navItem {
+        padding: 20px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Ícone de menu hamburguer */
+.menuIcon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 20; /* Garante que o ícone esteja sobre outros elementos */
+}
+
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: white; /* Garante que o ícone seja visível */
+    }
+}
