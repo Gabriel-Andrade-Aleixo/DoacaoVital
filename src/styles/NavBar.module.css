@@ -44,6 +44,11 @@ header .btnfechar {
     text-align: right;
 }
 
+.hamburguer {
+    position: fixed;
+    
+}
+
 .btnabrir{
     padding: 20px 20px;
     text-align: left;
@@ -58,4 +63,8 @@ header .btnfechar {
     right: 0;
     z-index: 9999;
     display: block;
+}
+
+hr {
+    width: 100vw ;
 }
