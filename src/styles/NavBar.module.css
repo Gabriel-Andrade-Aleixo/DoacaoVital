@@ -46,7 +46,9 @@ header .btnfechar {
 
 .hamburguer {
     position: fixed;
-    
+    height: 73px;
+    background-color: #c0c0c0de;
+
 }
 
 .btnabrir{
@@ -67,4 +69,9 @@ header .btnfechar {
 
 hr {
     width: 100vw ;
+}
+
+.espacoV{
+    height: 90px;
+    width: 100vh;
 }
