@@ -11,7 +11,8 @@ header {
 }
 
 header.abrMenu {
-    width: 70%;
+    max-width: 70%;
+    width: 400px;
 }
 
 header nav ul {
@@ -38,10 +39,14 @@ header .btnfechar svg,
     cursor: pointer;
 }
 
-header .btnfechar,
-.btnabrir {
+header .btnfechar {
     padding: 20px 5%;
     text-align: right;
+}
+
+.btnabrir{
+    padding: 20px 20px;
+    text-align: left;
 }
 
 .escMenu {
