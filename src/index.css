@@ -7,4 +7,5 @@
 
 body, html {
   height: 500vw;
+  overflow-x: hidden;
 }
