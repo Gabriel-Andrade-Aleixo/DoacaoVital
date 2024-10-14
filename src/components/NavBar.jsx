@@ -33,7 +33,7 @@ function NavBar() {
                     <nav className={styles.navBar}>
                         <ul className={styles.navList}>
                             <li>
-                                <Link to="/" className={styles.navItem}>Inicio</Link>
+                                <Link to="/home" className={styles.navItem}>Inicio</Link>
                             </li>
                             <li>
                                 <Link to="/doacao" className={styles.navItem}>Doação</Link>

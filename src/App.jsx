@@ -6,12 +6,14 @@ import Estoque from "./pages/Estoque";
 import Sobre from "./pages/Sobre";
 import Solicitacao from "./pages/Solicitacao";
 import Suporte from "./pages/Suporte";
+import HomeLogin from "./pages/HomeLogin";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route index element={<Navigate replace to="/home" />} />
+        <Route index element={<Navigate replace to="/inicio" />} />
+        <Route path="/inicio" element={<HomeLogin />} />
         <Route path="/home" element={<Home />} />
         <Route path="/doacao" element={<Doacao />}/>
         <Route path="/estoque" element={<Estoque />}/>
