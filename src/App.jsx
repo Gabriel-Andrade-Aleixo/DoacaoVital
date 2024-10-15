@@ -7,6 +7,7 @@ import Sobre from "./pages/Sobre";
 import Solicitacao from "./pages/Solicitacao";
 import Suporte from "./pages/Suporte";
 import HomeLogin from "./pages/HomeLogin";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -22,7 +23,6 @@ function App() {
         <Route path="/suporte" element={<Suporte />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <h1>Bom Dia</h1>
     </>
   )
 }

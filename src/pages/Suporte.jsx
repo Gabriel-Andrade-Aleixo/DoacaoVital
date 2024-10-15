@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 
-function Suporte () {
-    return(
+function Suporte() {
+    return (
         <>
-            <NavBar/>
+            <NavBar />
         </>
     )
 }

@@ -1,3 +1,7 @@
+* {
+    transition: .5s;
+}
+
 header {
     background-color: rgb(0, 0, 0);
     height: 100vh;
@@ -20,18 +24,8 @@ header nav ul {
     text-align: left;
 }
 
-header nav ul li .navItem {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 20px 4%;
-    display: block;
-}
 
-header nav ul li .navItem:hover {
-    background-color: red;
-}
+
 
 header .btnfechar svg,
 .btnabrir svg {
@@ -48,10 +42,9 @@ header .btnfechar {
     position: fixed;
     height: 73px;
     background-color: #c0c0c0ea;
-
 }
 
-.btnabrir{
+.btnabrir {
     padding: 20px 20px;
     text-align: left;
 }
@@ -68,10 +61,40 @@ header .btnfechar {
 }
 
 hr {
-    width: 100vw ;
+    width: 100vw;
 }
 
-.espacoV{
+.espacoV {
     height: 90px;
     width: 100vh;
+}
+
+.navItem {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+    list-style: none;
+    text-align: left;
+}
+
+.navItem:hover {
+    background-color: red;
+}
+
+.activeLink {
+    color: red;
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+    list-style: none;
+    text-align: left;
+    background-color: rgb(103, 0, 0);
 }

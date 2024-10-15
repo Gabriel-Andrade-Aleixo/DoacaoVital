@@ -6,6 +6,6 @@
 }
 
 body, html {
-  height: 500vw;
+  /* height: 100vh; */
   overflow-x: hidden;
 }

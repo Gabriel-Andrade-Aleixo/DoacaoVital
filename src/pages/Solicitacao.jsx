@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 
-function Solicitacao () {
-    return(
+function Solicitacao() {
+    return (
         <>
-            <NavBar/>
+            <NavBar />
         </>
     )
 }

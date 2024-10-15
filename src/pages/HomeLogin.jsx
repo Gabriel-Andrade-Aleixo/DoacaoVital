@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import styles from '../styles/HomeLogin.module.css';
 
 function HomeLogin() {
     return (
         <>
-            <NavBar/>
-            <h1>HOME LOGIN</h1>
+            <NavBar />
+
+            <div className={styles.banner}>
+                <button onClick={() => window.location.href = "/home"}>Home</button>
+            </div>
         </>
+
     )
 }
 

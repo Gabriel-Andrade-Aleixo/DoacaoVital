@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 
-function Sobre () {
-    return(
+function Sobre() {
+    return (
         <>
-            <NavBar/>
+            <NavBar />
         </>
     )
 }

@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 
-function Estoque () {
-    return(
+function Estoque() {
+    return (
         <>
-            <NavBar/>
+            <NavBar />
         </>
     )
 }

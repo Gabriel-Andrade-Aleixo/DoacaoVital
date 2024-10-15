@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar"
 
-function Doacao () {
-    return(
+function Doacao() {
+    return (
         <>
-            <NavBar/>
+            <NavBar />
         </>
     )
 }

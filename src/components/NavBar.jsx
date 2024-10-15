@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from '../styles/NavBar.module.css';
 
 function NavBar() {
-    // Usando useState para controlar se o menu está aberto ou fechado
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Função para alternar o estado do menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -14,7 +12,6 @@ function NavBar() {
     return (
         <>
             <div className={styles.hamburguer}>
-                {/* Botão para abrir o menu */}
                 <div className={styles.btnabrir}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16" onClick={toggleMenu}>
                         <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -22,7 +19,6 @@ function NavBar() {
                 </div>
                 <hr />
 
-                {/* Header com menu, aplicando classes dinamicamente */}
                 <header className={`${styles.header} ${menuOpen ? styles.abrMenu : ''}`}>
                     <div className={styles.btnfechar} onClick={toggleMenu}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
@@ -33,32 +29,59 @@ function NavBar() {
                     <nav className={styles.navBar}>
                         <ul className={styles.navList}>
                             <li>
-                                <Link to="/home" className={styles.navItem}>Inicio</Link>
+                                <NavLink 
+                                    to="/home" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Inicio
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/doacao" className={styles.navItem}>Doação</Link>
+                                <NavLink 
+                                    to="/doacao" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Doação
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/estoque" className={styles.navItem}>Estoque</Link>
+                                <NavLink 
+                                    to="/estoque" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Estoque
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/sobre" className={styles.navItem}>Sobre</Link>
+                                <NavLink 
+                                    to="/sobre" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Sobre
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/solicitacao" className={styles.navItem}>Solicitação</Link>
+                                <NavLink 
+                                    to="/solicitacao" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Solicitação
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/suporte" className={styles.navItem}>Suporte</Link>
+                                <NavLink 
+                                    to="/suporte" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Suporte
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>
                 </header>
 
-                {/* Background escuro que aparece quando o menu está aberto */}
                 {menuOpen && <div className={styles.escMenu} onClick={toggleMenu}></div>}
             </div>
-            <div className={styles.espacoV}></div>
-
         </>
     );
 }
