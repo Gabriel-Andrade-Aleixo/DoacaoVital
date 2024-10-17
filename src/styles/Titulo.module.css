@@ -1,0 +1,8 @@
+h1{
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 100px;
+    /* text-decoration: underline; */
+}
