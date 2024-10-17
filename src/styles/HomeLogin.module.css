@@ -1,15 +1,32 @@
 .banner {
     max-width: 100%;
     height: 100vh;
-    background-position: right;
+    background-position: calc(35%);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: end;
     justify-content: center;
-    background-image: url(../media/images/icon.png);
+    background-image: url(../media/images/BcInicio.png);
 }
 
-button{
+button {
     cursor: pointer;
+    height: 60px;
+    width: 200px;
+    border: solid 2px red;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+button:hover {
+    height: 70px;
+    width: 233px;
+    background-color: rgba(0, 0, 0, 0.722);
+    color: aliceblue;
 }
