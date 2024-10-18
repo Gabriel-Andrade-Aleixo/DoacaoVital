@@ -8,4 +8,20 @@
 body, html {
   /* height: 100vh; */
   overflow-x: hidden;
+  background-color: rgb(49, 49, 49);
+  height: 500vh;
+  position: relative;
+}
+
+.DivInfoa {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+.Espaco {
+  height: 73px;
+  height: 100%;
+  background-color: red;
 }

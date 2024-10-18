@@ -1,3 +1,5 @@
+import styles from "../styles/Titulo.module.css"
+
 function Titulo({ Titu }) {
     return (
         <>

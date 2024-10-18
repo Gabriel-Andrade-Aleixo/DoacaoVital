@@ -1,16 +1,17 @@
 import NavBar from "../components/NavBar"
 import Titulo from "../components/Titulo"
-import styles from "../styles/Titulo.module.css"
 import Footer from "../components/Footer"
 
 function Sobre() {
     return (
         <>
             <NavBar />
-            <Titulo Titu="Sobre Nós"/>
-            <Footer />
+            <div className="DivInfoa">
+                {/* <Titulo Titu="Sobre Nós" /> */}
+            </div>
+            {/* <Footer /> */}
         </>
     )
 }
 
-export default Sobre
+export default Sobre

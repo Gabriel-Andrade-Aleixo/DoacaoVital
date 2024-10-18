@@ -11,8 +11,6 @@ function HomeLogin() {
             <div className={styles.banner}>
                 <button onClick={() => window.location.href = "/home"}>Home</button>
             </div>
-
-            <Footer />
         </>
 
     )

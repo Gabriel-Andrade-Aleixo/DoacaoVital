@@ -40,6 +40,7 @@ header .btnfechar {
 
 .hamburguer {
     position: fixed;
+    top: 0;
     height: 73px;
     background-color: #c0c0c0af;
 }
@@ -57,7 +58,6 @@ header .btnfechar {
     top: 0;
     right: 0;
     z-index: 9999;
-    display: block;
 }
 
 hr {
