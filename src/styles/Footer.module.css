@@ -1,14 +1,14 @@
 .footer {
-    background-color: #333; /* Cor de fundo do footer */
-    color: aliceblue; /* Cor do texto */
+    background-color: #333; 
+    color: aliceblue; 
     text-align: center;
     padding: 20px;
-    position: absolute; /* Posiciona o footer de forma absoluta */
-    bottom: 0; /* Alinha o footer na parte inferior do contêiner pai */
-    left: 0; /* Alinha o footer à esquerda do contêiner pai */
-    width: 100%; /* Largura total do contêiner pai */
-    height: 20%;
-    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 4%;
+    z-index: 1000; 
 }
 
 .components {
