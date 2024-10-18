@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Footer from "../components/Footer";
 function NotFound() {
   return (
 
@@ -11,6 +11,7 @@ function NotFound() {
       <Link to="/" style={{ textDecoration: 'underline', color: 'blue' }}>
         Voltar para a página inicial
       </Link>
+      <Footer />
     </div>
   );
 }

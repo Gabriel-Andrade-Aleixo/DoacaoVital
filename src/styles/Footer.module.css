@@ -1,0 +1,43 @@
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: aliceblue; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+    position: absolute; /* Posiciona o footer de forma absoluta */
+    bottom: 0; /* Alinha o footer na parte inferior do contêiner pai */
+    left: 0; /* Alinha o footer à esquerda do contêiner pai */
+    width: 100%; /* Largura total do contêiner pai */
+    height: 20%;
+    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+}
+
+.components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoh1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+/* Estilos para os ícones das redes sociais */
+.socialLinks {
+    margin-top: 10px;
+}
+
+.icon {
+    color: aliceblue; /* Cor dos ícones */
+    font-size: 24px;
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #ccc; /* Muda a cor ao passar o mouse */
+}

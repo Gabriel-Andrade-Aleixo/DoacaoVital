@@ -9,6 +9,7 @@ import Suporte from "./pages/Suporte";
 import HomeLogin from "./pages/HomeLogin";
 import NavBar from "./components/NavBar";
 
+
 function App() {
   return (
     <>
