@@ -1,14 +1,9 @@
 .footer {
-    background-color: #333; 
-    color: aliceblue; 
+    background-color: #141414;
+    color: aliceblue;
     text-align: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 4%;
-    z-index: 1000; 
+
 }
 
 .components {
@@ -17,27 +12,39 @@
     align-items: center;
 }
 
+.hrFoot {
+    margin-top: 40px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
 .textoh1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.text {
-    font-size: 14px;
+.texto {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-/* Estilos para os ícones das redes sociais */
+
 .socialLinks {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon {
-    color: aliceblue; /* Cor dos ícones */
-    font-size: 24px;
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    transition: color 0.3s;
+    color: aliceblue; 
+    font-size: 40px;
+    margin: 0 10px; 
+    transition: 0.5s;
 }
 
 .icon:hover {
-    color: #ccc; /* Muda a cor ao passar o mouse */
+    color: #ccc;
+    scale: 1.2;
+    transition: .5s; 
 }
+

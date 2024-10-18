@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from '../styles/NavBar.module.css';
 
+
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -81,7 +82,9 @@ function NavBar() {
                 </header>
 
                 {menuOpen && <div className={styles.escMenu} onClick={toggleMenu}></div>}
+                
             </div>
+            
         </>
     );
 }
