@@ -4,6 +4,7 @@ function Titulo({ Titu }) {
     return (
         <>
             <h1>{Titu}</h1>
+            <hr className={styles.hrTit}/>
         </>
     );
 }
