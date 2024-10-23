@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: system-ui, -apple-system, Roboto;
 }
 
-body, html {
+body,
+html {
   /* height: 100vh; */
   /* overflow-x: hidden; */
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(27, 27, 27);
   /* height: 500vh; */
   position: relative;
 }
@@ -20,10 +22,43 @@ body, html {
   padding: 10px;
   /* height: 90px; */
   margin-top: 100px;
-  background-color: #fff;
+  background-color: rgb(253, 253, 222);
 }
 
-p{
+p {
   font-size: 1.5rem;
   margin: 10px;
+}
+
+.DivInfob {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.flex, .flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid red .1px;
+  /* max-width: 90%; */
+  margin: auto;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.flex img, .flex2 img {
+  height: 200px;
+}
+
+@media (max-width: 700px) {
+  .flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex2{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }

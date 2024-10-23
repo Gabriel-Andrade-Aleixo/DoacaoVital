@@ -8,7 +8,7 @@ function Footer() {
             <footer className={styles.footer}>
                 <div className={styles.components}>
 
-                    <p className={styles.texto}>© 2024 - Hudson Junior, Gabriel Aleixo, Gabriel Camera, Uriel Araujo. Todos os direitos reservados.</p>
+                    <p className={styles.texto}>© 2024 - Hudson Bárbara, Gabriel Aleixo, Gabriel Camara, Uriel Araújo. Todos os direitos reservados.</p>
 
                     <div className={styles.socialLinks}>
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

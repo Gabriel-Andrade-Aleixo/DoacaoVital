@@ -55,14 +55,6 @@ function NavBar() {
                             </li>
                             <li>
                                 <NavLink 
-                                    to="/sobre" 
-                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
-                                >
-                                    Sobre
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink 
                                     to="/solicitacao" 
                                     className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
                                 >
@@ -75,6 +67,14 @@ function NavBar() {
                                     className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
                                 >
                                     Suporte
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink 
+                                    to="/sobre" 
+                                    className={({ isActive }) => isActive ? styles.activeLink : styles.navItem}
+                                >
+                                    Sobre
                                 </NavLink>
                             </li>
                         </ul>
