@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Titulo from "../components/Titulo";
 import TituloII from "../components/TituloII";
 import NomeLegal from "../media/images/icon.png";
+import cssHr from "../styles/Titulo.module.css";
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum officia unde nisi enim error necessitatibus atque vero asperiores, quos animi porro cumque perferendis aut laborum minus quia distinctio? Commodi!</p>
                         <img src={NomeLegal} alt="Descrição" />
                     </div>
+                    <hr className={cssHr.hrTit}/>
 
                     <TituloII Titu="Estoque"></TituloII>
 
@@ -23,17 +25,22 @@ function Home() {
                         <img src={NomeLegal} alt="Descrição" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum officia unde nisi enim error necessitatibus atque vero asperiores, quos animi porro cumque perferendis aut laborum minus quia distinctio? Commodi!</p>
                     </div>
+                    <hr className={cssHr.hrTit}/>
                     
                     <TituloII Titu="Solicitação"></TituloII>
                     <div className="flex2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum officia unde nisi enim error necessitatibus atque vero asperiores, quos animi porro cumque perferendis aut laborum minus quia distinctio? Commodi!</p>
                         <img src={NomeLegal} alt="Descrição" />
                     </div>
+                    <hr className={cssHr.hrTit}/>
+
                     <TituloII Titu="Suporte"></TituloII>
                     <div className="flex">
                         <img src={NomeLegal} alt="Descrição" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum officia unde nisi enim error necessitatibus atque vero asperiores, quos animi porro cumque perferendis aut laborum minus quia distinctio? Commodi!</p>
                     </div>
+                    <hr className={cssHr.hrTit}/>
+
                     <TituloII Titu="Sobre"></TituloII>
                     <div className="flex2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum officia unde nisi enim error necessitatibus atque vero asperiores, quos animi porro cumque perferendis aut laborum minus quia distinctio? Commodi!</p>
